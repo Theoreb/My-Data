@@ -2,7 +2,7 @@
     "files": [
         {
             "name": "Experiments.zip",
-            "path": "https://store13.gofile.io/download/4e4680ad-0485-479b-bb70-6e5ecb7f831b/Experiments",
+            "path": "data/Experiments",
             "level": 2,
             "key": true,
             "type": "file/zip",
