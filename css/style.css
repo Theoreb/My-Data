@@ -1,0 +1,89 @@
+@import url("login.css");
+@import url("account.css");
+@import url("errors.css");
+@import url("fileinfo.css");
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#content {
+    right: 0;
+    bottom: 0;
+    width: calc(100% - 300px);
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    overflow: hidden;
+}
+
+#sidebar {
+    width: 300px;
+    height: 100%;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    overflow-y: scroll;
+    overflow-x: show;
+    padding: 10px;
+    
+    box-sizing: border-box;
+}
+
+.fileBar {
+    user-select: none;
+    position: relative;
+    width: 100%;
+    background-color: #ececec;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    text-align: center;
+
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    transition: transform 0.2s ease;
+}
+
+.fileBar:hover {
+    background-color: #e3e3e3;
+    transform: scale(1.05);
+}
+
+.fileBarLevel {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    margin: 2px;
+}
+
+.fileBarInfo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    margin: 3px;
+    user-select: none;
+    color: #727272;
+}
+
+#app-version {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    user-select: none;
+}

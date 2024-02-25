@@ -1,0 +1,79 @@
+#login-page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#login-form {
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#login-form h1 {
+    margin-bottom: 24px;
+    color: #333;
+    text-align: center;
+}
+
+#login-form p {
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333333d9;
+    text-align: center;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#login-form input::placeholder {
+    color: #888;
+}
+
+#login-form #login-button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form #login-button:hover {
+    background-color: #0056b3;
+}
+
+#login-form #guest-button {
+    position: relative;
+    font-size: 14px;
+    text-align: end;
+    outline: none;
+    background: none;
+    border: none;
+    width: 100%;
+    color: #888;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 5px;
+}
+
+#login-form #guest-button:hover {
+    text-decoration: underline;
+}
