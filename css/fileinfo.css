@@ -1,0 +1,67 @@
+#fileInfo {
+    background-color: #f8f9fa; /* Lighter background color for contrast */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    padding: 20px;
+    max-width: 600px; /* Optimal width for readability */
+    margin: 20px auto; /* Adjusted margin for clarity */
+    font-family: 'Courier New', Courier, monospace; /* Shell-like monospace font for a techy feel */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fileInfo img {
+    width: 100px; /* Defines size */
+    height: 100px; /* Maintains aspect ratio */
+    margin-bottom: 20px; /* Space between the image and text */
+    border-radius: 50%; /* Circular image for a friendly look */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Elevates the image visually */
+}
+
+#fileInfo p {
+    color: #495057; /* Dark color for text */
+    border-radius: 5px; /* Rounded corners for the attribute box */
+    padding: 8px 12px; /* Padding inside each attribute box */
+    margin: 8px 0; /* Reduced margin to prevent too large spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: calc(100% - 24px); /* Adjust width to account for padding */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Specific colors for each attribute, applied to the background */
+.fileInfoName { background-color: #cce5ff; }
+.fileInfoType { background-color: #d4edda; }
+.fileInfoInfo { background-color: #f8d7da; }
+.fileInfoDetail { background-color: #d6d8db; }
+
+.downloadButton {
+    background-color: #007bff; /* Consistent with fileInfoName background for coherence */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px; /* Adjusted space from the last detail to button */
+    transition: background-color 0.3s;
+    width: auto; /* Auto width to fit content */
+    align-self: center; /* Align button to the center under the fileInfo content */
+}
+
+.downloadButton:hover {
+    background-color: #0056b3; /* Darker shade on hover for visual feedback */
+}
+
+.progressBar {
+    width: 80%;
+    height: 20px;
+    text-align: center;
+    line-height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: width 0.3s ease;
+    margin: 10px;
+}

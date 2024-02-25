@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+}
+
+#title {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#info {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: #aaa;
+    margin: 0px;
+    font-weight: 500;
+}
+
+input[type="text"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.shell-text {
+    user-select: all;
+    text-align: initial;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    overflow: auto;
+    white-space: break-spaces;
+    max-height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: monospace;
+    line-height: 1.5;
+    tab-size: 4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+progress#fileProgress {
+    width: 100%;
+    height: 20px;
+    appearance: none; /* Remove default styling */
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  progress#fileProgress::-webkit-progress-bar {
+    background-color: #f2f2f2; /* Background color */
+  }
+  
+  progress#fileProgress::-webkit-progress-value {
+    background-color: #4caf50; /* Progress bar color */
+  }

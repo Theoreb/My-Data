@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload and Cryptor</title>
+    <link rel="stylesheet" href="css/cryptor.css">
+</head>
+<body>
+    <script type="module" src="js/cryptor.js"></script>
+    <h2 id="title">Upload a File to Encrypt</h2>
+    <h3 id="info">Encrypt your files with an username and a password using strong encryption algorithm (PBKDF2).</h3>
+    <input type="text" id="username" placeholder="Enter Key 1...">
+    <input type="password" id="password" placeholder="Enter Key 2...">
+    <input type="file" id="fileInput">
+    <input type="text" id="textInput" placeholder="Enter text to encrypt...">
+    <br>Please wait while your file is being processed...</br>
+    <progress id="fileProgress" value="0" max="100"></progress>
+    <button onclick="processFileWithCredentials()">Process File</button>
+</body>
+</html>

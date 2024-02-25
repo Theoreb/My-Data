@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Data</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+</head>
+<body>
+    <div id="sidebar"></div>
+    <div id="content">
+        <div id="login-page">
+            <form id="login-form" onsubmit="login(event)">
+                <h1>Login</h1>
+                <p>Please enter your username and password.</p>
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <button id="login-button" type="submit">Login</button>
+                <button id="guest-button" type="submit">Login as Guest ➤</button>
+            </form>
+        </div>
+    </div>
+    <div id="errorPopupContainer" class="error-popup-container"></div>
+    <div id="app-version">My Data v0.0.1 by <a href="https://github.com/Theoreb">Theoreb</a> is a secure web application for storing data in front of everybody using advanced cryptography.</div>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
