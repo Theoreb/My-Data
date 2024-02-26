@@ -72,6 +72,8 @@ function showFileInfo(file, canDownload) {
 
     downloadButton.addEventListener('click', async () => {
         const progressBar = document.createElement('progress');
+        progressBar.max = 100;
+        progressBar.value = 0;
         progressBar.classList.add('progressBar');
         infoDiv.appendChild(progressBar);
 
@@ -183,7 +185,7 @@ async function decryptAndDownloadFile(file, progressBar, details) {
     try {
         details.innerText = 'Fetching file...';
 
-        const content = await fetchData(file['path'], progressBar);
+        const content = await fetchData(file['path'], progressBar, file['size']);
         let finalBlob;
 
         if (file['key']) {
@@ -220,7 +222,6 @@ async function decryptAndDownloadFile(file, progressBar, details) {
         }
 
         details.innerText = 'Download file...';
-
         downloadFile(file['name'], finalBlob);
     } catch (error) {
         console.error(error);

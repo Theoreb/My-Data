@@ -2,13 +2,14 @@
     "files": [
         {
             "name": "Experiments.zip",
-            "path": "data/Experiments",
+            "path": "https://ia800206.us.archive.org/15/items/experiments.zip-1/Experiments.zip%281%29.txt",
             "level": 2,
             "key": true,
             "type": "file/zip",
             "info": "Dossier Projets (2017 - 2022)",
             "detail": "Ce fichier contient une petite fraction de mes projets personnels, sur lesquels j'ai rapidement travaillé entre 2017 et 2022. Ce fichier n'est pas vraiment représentatif de mon travail, car l'ensemble des projets qu'il contient ne sont pas réellement aboutis et s'apparentent plus à des expériences, mais il donne un bon aperçu de ma motivation. Ils n'ont pas été vérifiés depuis, il est ainsi possible que de nombreux projets ne fonctionnent plus actuellement. Je vous remercie de votre attention.",
-            "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJiKMRgVgDJ54BFmVzDHcm-CeVmSEoFWdKQ&usqp=CAU"
+            "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJiKMRgVgDJ54BFmVzDHcm-CeVmSEoFWdKQ&usqp=CAU",
+            "size": 275668000
         }
     ]
 }
